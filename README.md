@@ -1,7 +1,6 @@
 # BookSpace
 ## An Online Book Store Project using Django
 
-## Website link : http://anirudhjak.pythonanywhere.com/
 
 ## Project name
 Book Space📚
@@ -79,9 +78,9 @@ For more details about the project, please refer to [**"Book Space Documentation
 ## Team members :
 
 <pre>
+Rakesh Ganeshula          - S20190010052
 Anirudh Jakhotia          - S20190010007
 Neeraj Dusa               - S20190010047
 Harish Mullagura          - S20190010124
-Rakesh Ganeshula          - S20190010052
 Kanduri Jayanth Sri Ram   - S20190010084
 </pre>
