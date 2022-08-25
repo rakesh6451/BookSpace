@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fly With Books</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/Home/style.css' %}"> 
+
+</head>
+<body>
+    <div class="content">
+        <div class="loading">Loading....</div>
+        <div class="trigger"></div>
+        <div class="section">
+
+            <h1 style="font-family: 'Averia Serif Libre', cursive;">FLY WITH BOOKS</h1>
+            <h3>- A Free Book Website</h3>
+            <h4>FlyWithBooks is your best source to buy books online, make online book purchases.</h4>
+            <p>True, Unique and Free</p>
+            <p>Let's explore it</p>
+        </div>
+
+        <div class="section right">
+            <h2>Shop all kinds of books</h2>
+            <br>
+            <a type="button" class="cta" href="{% url 'store' %}" style="text-decoration:none;">Shop</a>
+            <br>
+            <br>
+            <p>CAT</p>
+            <p>NCERT</p>
+            <p>FINANCE</p>
+            <p>ACADEMIC</p>
+            <p>DICTIONARY</p>
+            <p>NON FICTION</p>
+            <p>SCHOOL LEVEL</p>
+            <p>FICTION BOOKS</p>
+            <p>NATIONAL EXAMS</p>
+            <p>CHILDREN BOOKS</p>
+
+
+        </div>
+
+        <div class="ground-container">
+            <div class="parallax ground"></div>
+            <div class="section right">
+                <h2>Donate your books and help others!!</h2>
+
+                <a type="button" class="cta" href="{% url 'donate' %}" style="text-decoration:none;">Donate</a>
+
+                <p>" Happiness doesn't result from what we get, but from what we give "</p>
+                <p>- Ben Carson</p>
+                <br>
+                <p>Helping one person might not change the whole world,</p>
+                <p> but it could change the world for one person</p>
+                <br>
+                <p>Donate your old books to the people who are in need</p>
+
+            </div>
+
+
+            <div class="section">
+                <h2>What We Will Do?</h2>
+                <p>Our mission is to help people who have interest to study</p>
+                <p>Our website offers books for free to the people who are in need</p>
+                <p>FlyWithBooks accepts books with pride</p>
+                <p>Assured books are enlisted on the website</p>
+                <p>Storing and Maintaining the Book Quality</p>
+                <p>Shipping books to Reader Door Step</p>
+                <p>Sharing is Caring!</p>
+            </div>
+
+            <div class="section right">
+                <h2>What You Should Do?</h2>
+                <p>Just Order books and sit back and relax</p>
+                <p>Our executives will get you the books as soon as possible</p>
+                <p>Help others by donating your old books</p>
+                <p>Fill Up the Donation Form get Books Ready</p>
+                <p>Handover Books to FlyWithBooks at your Door-step</p>
+                <p>Enjoy the Art Of Sharing!</p>
+            </div>
+            <div class="parallax clouds"></div>
+        </div>
+
+        <div class="blueprint">
+            <svg width="100%" height="100%" viewbox="0 0 100 100">
+			<line id="line-length" x1="10" y1="80" x2="90" y2="80" stroke-width="0.5"></line>
+			<path id="line-wingspan" d="M10 50, L40 35, M60 35 L90 50" stroke-width="0.5"></path>
+			<circle id="circle-phalange" cx="60" cy="60" r="15" fill="transparent" stroke-width="0.5"></circle>
+		</svg>
+            <div class="section dark ">
+                <h2>Hall Of Fame</h2>
+                <p>The Real Heroes Of Our Website!!</p>
+                <a type="button" class="cta" href="{% url 'halloffame' %}" style="text-decoration:none;">Hall of Fame</a>
+            </div>
+            <div class="section dark length">
+                <h2>Contact Us</h2>
+                <p>We would love to help you 24/7!</p>
+                <a type="button" class="cta" href="{% url 'contactus' %}"style="text-decoration:none;">Contact us</a>
+            </div>
+            <div class="section dark wingspan">
+                <h2>About Us</h2>
+                <p>You get me, and I get you</p>
+                <p>I love that About Us</p>
+                <a type="button" class="cta" href="{% url 'aboutus' %}" style="text-decoration:none;">About</a>
+            </div>
+            <div class="section dark phalange">
+                <h2>Tracking</h2>
+                <p>Get Accurate and Instant Tracking of your order</p>
+                <a type="button" class="cta">Track Your Order</a>
+            </div>
+            <div class="section dark">
+                <h2>Gifts!!</h2>
+                <p>We always amaze our donors surprises!</p>
+                <a type="button" class="cta">Get Your Gifts</a>
+            </div>
+
+        </div>
+        <div class="sunset">
+            <div class="section"></div>
+            <div class="section end">
+                <h2>Questions?</h2><br>
+                <a type="button" class="cta" href="{% url 'faq' %}" style="text-decoration:none;">FAQ</a>
+                <ul class="credits">
+                    <li>Website Designed By: Neeraj, Harish, Jayanth, Anirudh, Rakesh</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src='https://unpkg.com/three@0.117.1/build/three.min.js'></script>
+    <script src='https://unpkg.com/three@0.117.1/examples/js/loaders/OBJLoader.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js'></script>
+    <!--<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js'></script>-->
+    <script src="{% static '/js/Home/script.js' %}"></script>
+  <!--   <script src="{% static '/js/Home/home.js' %}"></script>-->
+
+
+</body>
+
+</html>
+
+<!--https://wallpapercave.com/wp/wp4430570.jpg-->

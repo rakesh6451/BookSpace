@@ -1,0 +1,50 @@
+{%  extends 'accounts/Login/index.html' %}
+
+{% block content1 %}
+
+<form action="" class="sign-up-form" method="POST">
+    {% csrf_token %}
+    <h2 class="title">SIGN UP</h2>
+    <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input placeholder="Username" type="text" value={{form.username}}>
+    </div>
+    <div class="input-field">
+        <i class="fas fa-envelope"></i>
+        <input placeholder="Email" type="email" value={{form.email}}>
+
+    </div>
+    <div class="input-field">
+        <i class="fas fa-envelope"></i>
+        <input placeholder="Email" type="email" value={{form.email}}>
+
+    </div>
+    <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input placeholder="Password" type="password" value={{form.password1}}>
+
+    </div>
+    <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input placeholder="Re-enter Password" type="password" value={{form.password2}}>
+
+    </div>
+    <input class="btn" type="submit" value="Sign up">
+    <p class="social-text">Or Sign up with social platforms</p>
+    <div class="social-media">
+        <a class="social-icon" href="https://www.google.co.in">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="social-icon" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="social-icon" href="#">
+            <i class="fab fa-google"></i>
+        </a>
+        <a class="social-icon" href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</form>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{%  extends 'accounts/Login/index.html' %}
+
+{% block content %}
+
+<form action="" class="sign-in-form" method="POST">
+    {% csrf_token %}
+    <h2 class="title">LOG IN</h2>
+    <div class="input-field">
+        <i class="fas fa-user"></i>
+        <input class="form-control" name="username" placeholder="Username" type="text">
+    </div>
+    <div class="input-field">
+        <i class="fas fa-lock"></i>
+        <input class="form-control" name="password" placeholder="Password" type="password">
+    </div>
+    <input class="btn solid" type="submit" value="Log In">
+    {{form.errors}}
+
+    {% for message in messages %}
+    <p id="messages">{{message}}</p>
+    {% endfor %}
+
+    <div>
+        <a href="{% url 'reset_password' %}" style="text-decoration:none;">Forgot Password?</a>
+    </div>
+    <p class="social-text">Or Log In in with social platforms</p>
+    <div class="social-media">
+        <a class="social-icon" href="https://www.google.co.in">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="social-icon" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="social-icon" href="#">
+            <i class="fab fa-google"></i>
+        </a>
+        <a class="social-icon" href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+</form>
+
+{% endblock %}
